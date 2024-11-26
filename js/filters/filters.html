@@ -19,18 +19,17 @@ body{
      display: flex;
      justify-content: right;
 }
-.button ul button :hover{
-    background-color: aqua;
+.button a:hover{
+    background-color: rgb(247, 248, 248);
+    text-decoration: solid;
 }
     </style>
 
 </head>
 <body>
     <div class="button">
-        <ul>
-    <button button type="button" class="btn btn-warning">Add to Cart</button>
-</ul>
-</div>
+        <a class="btn btn-warning" role="button" aria-disabled="true">Add to Cart</a>
+    </div>
     <div class="card-group">
     <div class="card" style="width: 18rem; padding: 5%;">
         <img src="https://m.media-amazon.com/images/I/71TMTgDuFOL._SX425_.jpg" class="card-img-top" alt="...">
