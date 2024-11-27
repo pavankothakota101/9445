@@ -6,8 +6,8 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <style>
-        *{
+   <style>
+    *{
     margin: 0;
     padding: 0;
 }
@@ -23,18 +23,30 @@ body{
     background-color: rgb(247, 248, 248);
     text-decoration: solid;
 }
-    </style>
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    margin: 20px;
+}
+   </style>
 
 </head>
 <body>
+  <form action="">
+    <input type="number" id="min" placeholder="Enter min value"/>
+    <input type="number" id="max" placeholder="enter max value"/>
+    <input type="button" value = "filter"name=" id="filter>
+  </form>
     <div class="button">
         <a class="btn btn-warning" role="button" aria-disabled="true">Add to Cart</a>
     </div>
-    <div class="card-group">
-    <div class="card" style="width: 18rem; padding: 5%;">
-        <img src="https://m.media-amazon.com/images/I/71TMTgDuFOL._SX425_.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Designer piece</h5>
+          <div class="main" style="display: flex;flex-wrap: wrap;">
+
+        <div class="card" style="border: 2px solid ;padding: 2%;margin: 2%;" data-value="5000">
+          <img src="https://m.media-amazon.com/images/I/81wN5ep5CAL._SY741_.jpg " class="card-img-top" alt="...">
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           <p>Size : 30cm</p>
             <p>Product Dimensions : 30L x 30W Cm</p>
@@ -42,13 +54,11 @@ body{
             <p>Number of Items : 1</p>
             <p>Orientation : Portrait</p>
             <P>Shape : Round</P>
+            <h3>Price:5000</h3>
           <a href="#" class="btn btn-primary">Add to Cart</a>
         </div>
-      </div>
-    <div class="card" style="width: 18rem; padding: 5%">
-        <img src="https://m.media-amazon.com/images/I/81yw8pndPrL._SX569_.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Designer piece</h5>
+        <div class="card" style="border: 2px solid ;padding: 2%;margin: 2%;" data-value="3500">
+          <img src="https://m.media-amazon.com/images/I/71JFwrsIoQL._SX569_.jpg" class="card-img-top" alt="...">
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           <p>Size : 30cm</p>
             <p>Product Dimensions : 76.2L x 76.2W Centimeters</p>
@@ -56,111 +66,114 @@ body{
             <p>Number of Items : 1</p>
             <p>Orientation : Portrait</p>
             <P>Shape : Square</P>
+            <h3>Price:3500</h3>
           <a href="#" class="btn btn-primary">Add to Cart</a>
-        </div>
       </div>
-      <div class="card" style="width: 18rem; padding: 5%">
+      <div class="card" style="border: 2px solid ;padding: 2%;margin: 2%;" data-value="50000">
         <img src="https://m.media-amazon.com/images/I/414D-6yKA9L._SX300_SY300_QL70_FMwebp_.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Designer piece</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           <p>Size : 130cm</p>
             <p>Product Dimensions : 137.2L x 66W Centimetersp</p>
             <p>Item Weight : 1250 Grams</p>
             <p>Number of Items : 1</p>
             <p>Orientation : Portrait</p>
             <P>Shape : Square</P>
+            <h3>Price:50000</h3>
           <a href="#" class="btn btn-primary">Add to Cart</a>
         </div>
-      </div>
+  <div class="card" style="border: 2px solid ;padding: 2%;margin: 2%;" data-value="6500">
+    <img src="https://m.media-amazon.com/images/I/81UU5zohCdL._SX425_.jpg" class="card-img-top" alt="...">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <p>Size : 40cm</p>
+      <p>Product Dimensions : 17L x 46W Centimeters</p>
+      <p>Item Weight : 250 Grams</p>
+      <p>Number of Items : 1</p>
+      <p>Orientation : Portrait</p>
+      <P>Shape : Round</P>
+      <h3>Price:6500</h3>
+    <a href="#" class="btn btn-primary">Add to Cart</a>
     </div>
-    <div class="card-group">
-      <div class="card" style="width: 18rem; padding: 5%">
-        <img src="https://m.media-amazon.com/images/I/718DkZUxBiL._SX300_SY300_QL70_FMwebp_.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Designer piece</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <p>Size : 50cm</p>
-            <p>Product Dimensions : 60L x 2W Centimeters</p>
-            <p>Item Weight : 250 Grams</p>
-            <p>Number of Items : 1</p>
-            <p>Orientation : Portrait</p>
-            <P>Shape : Round</P>
-          <a href="#" class="btn btn-primary">Add to Cart</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem; padding: 5%">
-        <img src="https://m.media-amazon.com/images/I/81UU5zohCdL._SX425_.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Designer piece</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <p>Size : 40cm</p>
-            <p>Product Dimensions : 17L x 46W Centimeters</p>
-            <p>Item Weight : 250 Grams</p>
-            <p>Number of Items : 1</p>
-            <p>Orientation : Portrait</p>
-            <P>Shape : Round</P>
-          <a href="#" class="btn btn-primary">Add to Cart</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem; padding: 5%">
-        <img src="https://m.media-amazon.com/images/I/41F0Hq2F2LL._SX300_SY300_QL70_FMwebp_.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Designer piece</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <p>Size : 39cm</p>
-            <p>Product Dimensions : 17L x 46W Centimeters</p>
-            <p>Item Weight : 280 Grams</p>
-            <p>Number of Items : 1</p>
-            <p>Orientation : Portrait</p>
-            <P>Shape : Round</P>
-          <a href="#" class="btn btn-primary">Add to Cart</a>
-        </div>
-      </div>
-      </div>
-      <div class="card-group">
-      <div class="card" style="width: 18rem; padding: 5%">
+    <div class="card" style="border: 2px solid ;padding: 2%;margin: 2%;" data-value="6500">
+      <img src="https://m.media-amazon.com/images/I/81UU5zohCdL._SX425_.jpg" class="card-img-top" alt="...">
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <p>Size : 40cm</p>
+        <p>Product Dimensions : 17L x 46W Centimeters</p>
+        <p>Item Weight : 250 Grams</p>
+        <p>Number of Items : 1</p>
+        <p>Orientation : Portrait</p>
+        <P>Shape : Round</P>
+        <h3>Price:6500</h3>
+      <a href="#" class="btn btn-primary">Add to Cart</a>
+      
+  </div>
+  <div class="card" style="border: 2px solid ;padding: 2%;margin: 2%;" data-value="2600">
+    <img src="https://m.media-amazon.com/images/I/41F0Hq2F2LL._SX300_SY300_QL70_FMwebp_.jpg" class="card-img-top" alt="...">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <p>Size : 39cm</p>
+      <p>Product Dimensions : 17L x 46W Centimeters</p>
+      <p>Item Weight : 280 Grams</p>
+      <p>Number of Items : 1</p>
+      <p>Orientation : Portrait</p>
+      <P>Shape : Round</P>
+      <h3>Price:2600</h3>
+    <a href="#" class="btn btn-primary">Add to Cart</a>
+   
+</div>   
+      <div class="card" style="border: 2px solid ;padding: 2%;margin: 2%;" data-value="3900">
         <img src="https://m.media-amazon.com/images/I/71QnC79usqL._SX569_.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Designer piece</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           <p>Size : 40cm</p>
             <p>Product DIMENSIONS : 40.6L x 16.5W Centimeters</p>
             <p>Item Weight : 290 Grams</p>
             <p>Number of Items : 1</p>
             <p>Orientation : Landscape</p>
             <P>Shape : Round</P>
+            <h3>Price:3900</h3>
           <a href="#" class="btn btn-primary">Add to Cart</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem; padding: 5%">
-        <img src="https://m.media-amazon.com/images/I/41781JyxznL._SX300_SY300_QL70_FMwebp_.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Designer piece</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        
+    </div>
+    <div class="card" style="border: 2px solid ;padding: 2%;margin: 2%;" data-value="7800">
+      <img src="https://m.media-amazon.com/images/I/41781JyxznL._SX300_SY300_QL70_FMwebp_.jpg" class="card-img-top" alt="...">
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           <p>Size : 37cm</p>
             <p>Product DIMENSIONS : 40.6L x 14.6W Centimeters</p>
             <p>Item Weight : 290 Grams</p>
             <p>Number of Items : 1</p>
             <p>Orientation : Landscape</p>
             <P>Shape : Round</P>
+            <h3>Price:7800</h3>
           <a href="#" class="btn btn-primary">Add to Cart</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem; padding: 5%">
-        <img src="https://m.media-amazon.com/images/I/41XBlvori8L._SX300_SY300_QL70_FMwebp_.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Designer piece</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      
+  </div>
+  <div class="card" style="border: 2px solid ;padding: 2%;margin: 2%;" data-value="5700">
+    <img src="https://m.media-amazon.com/images/I/41XBlvori8L._SX300_SY300_QL70_FMwebp_.jpg" class="card-img-top" alt="...">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           <p>Size : 308cm</p>
             <p>Product DIMENSIONS : 40.6L x 14.6W Centimeters</p>
             <p>Item Weight : 360 Grams</p>
             <p>Number of Items : 1</p>
             <p>Orientation : Landscape</p>
             <P>Shape : Round</P>
+            <h3>Price:5700</h3>
           <a href="#" class="btn btn-primary">Add to Cart</a>
-        </div>
-      </div>
-      </div>
+    
+</div>
+    </div>
+
+      <script>
+        document.querySelectorAll('card').forEach(function(ele){
+          document.querySelector('filter').addEventListener('click',function(){
+            let minvalue = parseInt(document.getElementById('min').value);
+            let maxvalue = parseint(document.getElementById('max').value);
+            let dataitems = ele.getAttribute('data-value');
+            if(dataitems >= minvalue && dataitems <+ maxvalue){
+              ele.style.display = "block"
+            }
+            else{
+              ele.style.display = "none"
+            }
+          })
+        })
+      </script>
 </body>
 </html>
